@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,16 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+
+Route::get('/post-project', function () {
+    return view('post_project');
+});
+
+
+
+
+Route::group((['prefix' => 'admin/', 'as' => 'admin.',]), function() {
+Route::get('/overview', [AdminController::class, 'dashboardIndex']);
+
+    // Route::get('/overview', [AdminController::class, 'dashboardIndex']);
+});
