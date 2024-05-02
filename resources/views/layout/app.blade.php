@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
@@ -6,7 +5,7 @@
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{env('APP_NAME') }} | Creative Agency</title>
+    <title>{{ env('APP_NAME') }} | Creative Agency</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -19,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
     <link rel="stylesheet" href="assets/css/vendor/odometer-theme-default.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/toast.min.css') }}">
 
     <!-- Site Stylesheet -->
     <link rel="stylesheet" href="assets/css/app.css">
@@ -55,84 +55,12 @@
         <!--=====================================-->
         <!--=        Header Area Start       	=-->
         <!--=====================================-->
-        <header class="header axil-header header-style-1">
-            <div id="axil-sticky-placeholder"></div>
-            <div class="axil-mainmenu">
-                <div class="container">
-                    <div class="header-navbar">
-                        <div class="header-logo">
-                            <a href="/"><img class="light-version-logo" src="assets/media/logo.png" style="width: 50px !important ; height: 50px !important" alt="logo"></a>
-                            <a href="/"><img class="dark-version-logo" src="assets/media/logo3.png" alt="logo"></a>
-                            <a href="/"><img class="sticky-logo" src="assets/media/logo2.png" alt="logo"></a>
-                        </div>
-                        <div class="header-main-nav">
-                            <!-- Start Mainmanu Nav -->
-                            <nav class="mainmenu-nav" id="mobilemenu-popup">
-                                <div class="d-block d-lg-none">
-                                    <div class="mobile-nav-header">
-                                        <div class="mobile-nav-logo">
-                                            <a href="/">
-                                                <img class="light-mode" src="assets/media/logo2.png" alt="Site Logo">
-                                                <img class="dark-mode" src="assets/media/logo3.png" alt="Site Logo">
-                                            </a>
-                                        </div>
-                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
-                                    </div>
-                                </div>
-                                <ul class="mainmenu">
-                                    <li>
-                                        <a href="/">Home</a>
-                                    </li>
-                                    <li><a href="/about">About Us</a></li>
-                                
-                                    <li><a href="/service">Services</a></li>
-                                    <li><a href="/portfolio">portfolio</a></li>
-                                    <li><a href="/contact">Contact</a></li>
-                                </ul>
-                            </nav>
-                            <!-- End Mainmanu Nav -->
-                        </div>
-                        <div class="header-action">
-                            <ul class="list-unstyled">
-                                <li class="sidemenu-btn d-lg-block d-none">
-                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenuRight">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </li>
-                                <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
-                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                </li>
-                                <li class="my_switcher d-block d-lg-none">
-                                    <ul>
-                                        <li title="Light Mode">
-                                            <a href="javascript:void(0)" class="setColor light" data-theme="light">
-                                                <i class="fal fa-lightbulb-on"></i>
-                                            </a>
-                                        </li>
-                                        <li title="Dark Mode">
-                                            <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
-                                                <i class="fas fa-moon"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+        @include('layout.header')
         <!--=====================================-->
         <!--=        Banner Area Start         =-->
         <!--=====================================-->
 
-@yield('page_content')
+        @yield('page_content')
 
         <!--=====================================-->
         <!--=        Footer Area Start       	=-->
@@ -142,21 +70,31 @@
                 <div class="footer-top">
                     <div class="footer-social-link">
                         <ul class="list-unstyled">
-                            <li><a href="https://facebook.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.pinterest.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a></li>
-                            <li><a href="https://www.linkedin.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://www.instagram.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://vimeo.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li>
-                            <li><a href="https://dribbble.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="https://www.behance.net/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="https://www.snapchat.com/" data-sal="slide-up" data-sal-duration="500" data-sal-delay="800"><i class="fab fa-snapchat-ghost"></i></a></li>
+                            <li><a href="https://facebook.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.pinterest.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.instagram.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://vimeo.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li>
+                            <li><a href="https://dribbble.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li>
+                            <li><a href="https://www.behance.net/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
+                            <li><a href="https://www.snapchat.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="800"><i class="fab fa-snapchat-ghost"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-main">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-5" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
+                        <div class="col-xl-6 col-lg-5" data-sal="slide-right" data-sal-duration="800"
+                            data-sal-delay="100">
                             <div class="footer-widget border-end">
                                 <div class="footer-newsletter">
                                     <h2 class="title">Get in touch!</h2>
@@ -171,7 +109,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-7" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
+                        <div class="col-xl-6 col-lg-7" data-sal="slide-left" data-sal-duration="800"
+                            data-sal-delay="100">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="footer-widget">
@@ -196,6 +135,7 @@
                                                 <li><a href="#">Blog</a></li>
                                                 <li><a href="#">Case Studies</a></li>
                                                 <li><a href="#">Portfolio</a></li>
+                                                <li><a href="/post-project">Post Project</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -220,10 +160,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-copyright text-center">
-                                <span class="copyright-text">© {{date('Y')}}. All rights reserved by <a href="https://axilthemes.com/">{{ env('APP_NAME') }}</a>.</span>
+                                <span class="copyright-text">© {{ date('Y') }}. All rights reserved by <a
+                                        href="https://axilthemes.com/">{{ env('APP_NAME') }}</a>.</span>
                             </div>
                         </div>
-                  
+
                     </div>
                 </div>
             </div>
@@ -276,7 +217,8 @@
                                         <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -305,20 +247,58 @@
     <script src="assets/js/vendor/jquery.nav.js"></script>
 
     <!-- Site Scripts -->
+    <script type="text/javascript" src="{{ asset('assets/toast.js') }}"></script>
+    @if (session('error'))
+        <script>
+            Toastify({
+                text: "<?= session('error') ?>",
+                duration: 5000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #b04300, #ff0000)",
+                },
+            }).showToast();
+        </script>
+    @endif
+
+    @if (session('success'))
+        <script>
+            Toastify({
+                text: "<?= session('success') ?>",
+                duration: 5000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #01ff01)",
+                },
+            }).showToast();
+        </script>
+    @endif
+
     <script src="assets/js/app.js"></script>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/660d6cfc1ec1082f04de6f4a/1hqi73gqh';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    @stack('scripts')
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6633646d1ec1082f04ea25ca/1hssc0jt9';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
 </body>
+
 </html>

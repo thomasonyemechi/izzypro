@@ -38,32 +38,36 @@
         <nav class="navbar-vertical navbar">
             <div class="nav-scroller">
                 <!-- Brand logo -->
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="{{ asset('admin/images/brand/logo/logo-inverse.svg') }}" alt="" />
+                <a class="navbar-brand" href="/">
+                    <img src="{{ asset('assets/media/logo3.png') }}" class="img-fluid" alt="" />
                 </a>
                 <!-- Navbar nav -->
                 <ul class="navbar-nav flex-column" id="sideNavbar">
+                  
                     <li class="nav-item">
-                        <a class="nav-link  " href="#!" data-bs-toggle="collapse" data-bs-target="#navDashboard"
-                            aria-expanded="false" aria-controls="navDashboard">
-                            <i class="nav-icon fe fe-home me-2"></i> Dashboard
+                        <a class="nav-link " href="/admin/overview">
+                            <i class="nav-icon fe fe-home me-2"></i> Account Overview
                         </a>
-                        <div id="navDashboard" class="collapse  show " data-bs-parent="#sideNavbar">
-                            <ul class="nav flex-column">
-                                <li class="nav-item ">
-                                    <a class="nav-link  active " href="admin-dashboard.html">
-                                        Overview
-                                    </a>
-                                </li>
-                                <!-- Nav item -->
-                                <li class="nav-item ">
-                                    <a class="nav-link " href="dashboard-analytics.html">
-                                        Analytics
+                    </li>
 
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="/admin/manage_client">
+                            <i class="nav-icon fe fe-users me-2"></i>Manage Client
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="/admin/client_orders">
+                            <i class="nav-icon fe fe-shopping-bag me-2"></i>Client Orders
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="/admin/manage_client">
+                            <i class="nav-icon fe fe-power me-2"></i>Exit Account
+                        </a>
                     </li>
 
                 </ul>
@@ -72,11 +76,10 @@
                     <div class="card-body py-6">
                         <img src="{{ asset('admin/images/background/giftbox.png') }}" alt="" />
                         <div class="mt-4">
-                            <h5 class="text-white">Unlimited Access</h5>
+                            <h5 class="text-white">Welcome Admin</h5>
                             <p class="text-white-50 fs-6">
-                                Upgrade your plan from a Free trial, to select ‘Business Plan’. Start Now
+                             Your central command center for managing projects, and users. Let's make creativity happen!
                             </p>
-                            <a href="#!" class="btn btn-white btn-sm mt-2">Upgrade Now</a>
                         </div>
                     </div>
                 </div>

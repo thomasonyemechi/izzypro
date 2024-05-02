@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,7 +22,7 @@ class PaymentController extends Controller
             'redirect_url' => $redirect_url,
             'payment_options' => 'card, ussd, banktransfer',
             'customizations' => [
-                'title' => env('APP_NAME') . ' Order Payment',
+                'title' => env('APP_NAME') . ' Project Payment',
                 'logo' => ""
             ],
             'customer' => [
@@ -36,6 +37,11 @@ class PaymentController extends Controller
 
     public function verifyFlutter(Request $request, $trno)
     {
+
+        $project = Project::where(['trno' => $trno])->first();
+        $user = User::find($project->customer_id);
+        Auth::login($user);
+
         $res = Http::withHeaders([
             'Content-Type' => 'application/json',
             'Authorization' => 'Bearer FLWSECK-746765972f7c0c4b2df2422515f17a8f-18d8dad7004vt-X',
@@ -43,17 +49,17 @@ class PaymentController extends Controller
 
         $res = json_decode($res);
 
-        if (!auth()->user()) {
-            $user = User::where(['email' => $res->data->customer->email])->first();
-            Auth::login($user);
+        if ($request->status == 'cancelled') {
+            return redirect('/client/account')->with('error', 'An error occured while making payment');
         }
 
+   
 
         if ($request->status == 'successful') {
 
-            return redirect('/thank-you?trno=' . $trno)->with('success', 'payment completed');
+            return redirect('/client/account' . $trno)->with('success', 'payment completed');
         } else {
-            return redirect('/user/index')->with('error', 'An error occure while making payment');
+            return redirect('/client/account')->with('error', 'An error occured while making payment');
         }
     }
 }

@@ -52,4 +52,11 @@ class Controller extends BaseController
     }
 
 
+    function ran_rel($length)
+    {
+        return substr(str_shuffle(str_repeat('123456789abcdefghijklmnopqrstuvwxyz', $length)), 0, $length);
+    }
+
+
+
 }
