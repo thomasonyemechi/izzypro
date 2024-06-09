@@ -20,6 +20,7 @@
     <link href="{{ asset('admin/libs/tiny-slider/dist/tiny-slider.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/libs/tippy.js/dist/tippy.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/toast.min.css') }}">
 
 
 
@@ -43,7 +44,7 @@
                 </a>
                 <!-- Navbar nav -->
                 <ul class="navbar-nav flex-column" id="sideNavbar">
-                  
+                  {{-- <li class="nav-item ms-5" > <h5 class="fw-bold text-white">Main</h5> </li> --}}
                     <li class="nav-item">
                         <a class="nav-link " href="/admin/overview">
                             <i class="nav-icon fe fe-home me-2"></i> Account Overview
@@ -65,7 +66,14 @@
 
 
                     <li class="nav-item">
-                        <a class="nav-link " href="/admin/manage_client">
+                        <a class="nav-link " href="/admin/portfolio">
+                            <i class="nav-icon fe fe-shopping-bag me-2"></i>Portfolio
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="/logout">
                             <i class="nav-icon fe fe-power me-2"></i>Exit Account
                         </a>
                     </li>
@@ -207,6 +215,42 @@
 
     {{-- <script src="../../../../cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script> --}}
     <script src="{{ asset('admin/js/theme.min.js') }}"></script>
+
+    <script type="text/javascript" src="{{ asset('assets/toast.js') }}"></script>
+    @if (session('error'))
+        <script>
+            Toastify({
+                text: "<?= session('error') ?>",
+                duration: 5000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #b04300, #ff0000)",
+                },
+            }).showToast();
+        </script>
+    @endif
+
+    @if (session('success'))
+        <script>
+            Toastify({
+                text: "<?= session('success') ?>",
+                duration: 5000,
+                close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #00b09b, #01ff01)",
+                },
+            }).showToast();
+        </script>
+    @endif
+
+
+    @stack('scripts')
 </body>
 
 </html>

@@ -34,19 +34,19 @@
                 <div class="col-xl-5 col-lg-6">
                     <div class="contact-form-box shadow-box mb--30">
                         <h3 class="title">Get a free Keystroke quote now</h3>
-                        <form method="POST" action="https://new.axilthemes.com/demo/template/abstrak/mail.php"
+                        <form method="POST"
                             class="axil-contact-form">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" class="form-control" name="contact-name">
+                                <input type="text" class="form-control" value="{{ isset($_GET['name']) ? $_GET['name'] : '' }}" name="contact-name">
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" name="contact-email">
+                                <input type="email" class="form-control" value="{{ isset($_GET['email']) ? $_GET['email'] : '' }}" name="contact-email">
                             </div>
                             <div class="form-group">
-                                <label>Company</label>
-                                <input type="text" class="form-control" name="contact-company">
+                                <label>Phone</label>
+                                <input type="text" class="form-control" value="{{ isset($_GET['phone']) ? $_GET['phone'] : '' }}" name="contact-company">
                             </div>
                             <div class="form-group mb--40">
                                 <label>How can we help you?</label>
@@ -63,12 +63,12 @@
                     <div class="contact-info mb--100 mb_md--30 mt_md--0 mt--150">
                         <h4 class="title">Phone</h4>
                         <p>Our customer care is open from Mon-Fri, 10:00 am to 6:00 pm</p>
-                        <h4 class="phone-number"><a href="tel:1234567890">(123) 456 7890</a></h4>
+                        <h4 class="phone-number"><a href="tel:2348162932634">(234) 816 2932 634</a></h4>
                     </div>
                     <div class="contact-info mb--30">
                         <h4 class="title">Email</h4>
                         <p>Our support team will get back to in 48-h during standard business hours.</p>
-                        <h4 class="phone-number"><a href="mailto:info@example.com">info@example.com</a></h4>
+                        <h4 class="phone-number" style="font-size: 27px; " ><a href="mailto:contact@izzyproconcept.com">contact@izzyproconcept.com</a></h4>
                     </div>
                 </div>
             </div>

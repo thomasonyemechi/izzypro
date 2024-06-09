@@ -6,7 +6,7 @@
 
 
 @section('page_content')
-<div class="row">
+{{-- <div class="row">
     <div class="col-lg-12 col-md-12 col-12">
         <div class="border-bottom pb-4 mb-4 d-md-flex justify-content-between align-items-center">
             <div class="mb-3 mb-md-0">
@@ -17,7 +17,7 @@
                     <input class="form-control flatpickr" type="text" placeholder="Select Date"
                         aria-describedby="basic-addon2">
 
-                    <span class="input-group-text text-muted" id="basic-addon2"><i
+                    <span class="inaput-group-text text-muted" id="basic-addon2"><i
                             class="fe fe-calendar"></i></span>
 
                 </div>
@@ -185,6 +185,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 @endsection

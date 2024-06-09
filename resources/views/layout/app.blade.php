@@ -70,24 +70,30 @@
                 <div class="footer-top">
                     <div class="footer-social-link">
                         <ul class="list-unstyled">
-                            <li><a href="https://facebook.com/" data-sal="slide-up" data-sal-duration="500"
+                            {{-- <li><a href="https://facebook.com/" data-sal="slide-up" data-sal-duration="500"
                                     data-sal-delay="100"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="https://twitter.com/" data-sal="slide-up" data-sal-duration="500"
                                     data-sal-delay="200"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="https://www.pinterest.com/" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a></li>
+                         
                             <li><a href="https://www.linkedin.com/" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://www.instagram.com/" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="500"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://vimeo.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="400"><i class="fab fa-linkedin-in"></i></a></li> --}}
+
+                            <li><a href="https://www.pinterest.com/izzyproconcept" data-sal="slide-up"
+                                    data-sal-duration="500" data-sal-delay="300"><i class="fab fa-pinterest-p"></i></a>
+                            </li>
+                            <li><a href="https://dribbble.com/izzyproconcept" data-sal="slide-up"
+                                    data-sal-duration="500" data-sal-delay="700"><i class="fab fa-dribbble"></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/izzyproconcept?igsh=d3I5NzBxbDhlc2ln&utm_source=qr"
+                                    data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            {{-- <li><a href="https://vimeo.com/" data-sal="slide-up" data-sal-duration="500"
                                     data-sal-delay="600"><i class="fab fa-vimeo-v"></i></a></li>
-                            <li><a href="https://dribbble.com/" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="700"><i class="fab fa-dribbble"></i></a></li>
-                            <li><a href="https://www.behance.net/" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="https://www.snapchat.com/" data-sal="slide-up" data-sal-duration="500"
-                                    data-sal-delay="800"><i class="fab fa-snapchat-ghost"></i></a></li>
+                            --}}
+                            <li><a href="https://www.behance.net/izzyproconcept" data-sal="slide-up"
+                                    data-sal-duration="500" data-sal-delay="800"><i class="fab fa-behance"></i></a></li>
+                            {{-- <li><a href="https://www.snapchat.com/" data-sal="slide-up" data-sal-duration="500"
+                                    data-sal-delay="800"><i class="fab fa-snapchat-ghost"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>
@@ -98,8 +104,7 @@
                             <div class="footer-widget border-end">
                                 <div class="footer-newsletter">
                                     <h2 class="title">Get in touch!</h2>
-                                    <p>Fusce varius, dolor tempor interdum tristique, dui urna bib
-                                        endum magna, ut ullamcorper purus</p>
+
                                     <form>
                                         <div class="input-group">
                                             <input type="email" class="form-control" placeholder="Email address">
@@ -118,10 +123,7 @@
                                         <div class="footer-menu-link">
                                             <ul class="list-unstyled">
                                                 <li><a href="#">Logo &amp; Branding</a></li>
-                                                <li><a href="#">Website Development</a></li>
-                                                <li><a href="#">Mobile App Development</a></li>
                                                 <li><a href="#">Search Engine Optimization</a></li>
-                                                <li><a href="#">Pay-Per-Click</a></li>
                                                 <li><a href="#">Social Media Marketing</a></li>
                                             </ul>
                                         </div>
@@ -132,36 +134,32 @@
                                         <h6 class="widget-title">Resourses</h6>
                                         <div class="footer-menu-link">
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Blog</a></li>
-                                                <li><a href="#">Case Studies</a></li>
-                                                <li><a href="#">Portfolio</a></li>
+                                                <li><a href="/service">Service</a></li>
+                                                <li><a href="/portfolio">Portfolio</a></li>
                                                 <li><a href="/post-project">Post Project</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
-                                    <div class="footer-widget">
-                                        <h6 class="widget-title">Support</h6>
-                                        <div class="footer-menu-link">
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">Contact</a></li>
-                                                <li><a href="#">Privacy Policy</a></li>
-                                                <li><a href="#">Terms of Use</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="footer-bottom" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-copyright text-center">
+                        <div class="col-md-6">
+                            <div class="footer-copyright text-start">
                                 <span class="copyright-text">© {{ date('Y') }}. All rights reserved by <a
                                         href="https://axilthemes.com/">{{ env('APP_NAME') }}</a>.</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="footer-bottom-link">
+                                <ul class="list-unstyled">
+                                    <li><a href="/service">Terms of Service</a></li>
+                                </ul>
                             </div>
                         </div>
 
@@ -192,32 +190,40 @@
                         <ul class="main-navigation list-unstyled">
                             <li><a href="#">Graphic Design</a></li>
                             <li><a href="#">Technology</a></li>
-                            <li><a href="#">Video Editing</a></li>
+                            <li><a href="#">Motion Graphics</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-7 col-xl-6">
                         <div class="contact-info-wrap">
                             <div class="contact-inner">
-                                <address class="address">
+                                {{-- <address class="address">
                                     <span class="title">Contact Information</span>
                                     <p>Theodore Lowe, Ap #867-859 <br> Sit Rd, Azusa New York</p>
-                                </address>
+                                </address> --}}
                                 <address class="address">
                                     <span class="title">We're Available 24/7. Call Now.</span>
-                                    <a class="tel" href="tel:8884562790"><i class="fas fa-phone"></i>(888)
-                                        456-2790</a>
-                                    <a class="tel" href="tel:12125553333"><i class="fas fa-fax"></i>(121)
-                                        255-53333</a>
+                                    <a class="tel" href="tel:2348162932634"><i class="fas fa-phone"></i>(234) 816
+                                        2932 634</a>
                                 </address>
                             </div>
                             <div class="contact-inner">
                                 <h5 class="title">Find us here</h5>
                                 <div class="contact-social-share">
                                     <ul class="social-share list-unstyled">
-                                        <li><a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                        <li><a href="https://www.pinterest.com/izzyproconcept" data-sal="slide-up"
+                                                data-sal-duration="500" data-sal-delay="300"><i
+                                                    class="fab fa-pinterest-p"></i></a>
+                                        </li>
+                                        <li><a href="https://dribbble.com/izzyproconcept" data-sal="slide-up"
+                                                data-sal-duration="500" data-sal-delay="700"><i
+                                                    class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li><a href="https://www.instagram.com/izzyproconcept?igsh=d3I5NzBxbDhlc2ln&utm_source=qr"
+                                                data-sal="slide-up" data-sal-duration="500" data-sal-delay="500"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.behance.net/izzyproconcept"><i
+                                                    class="fab fa-behance"></i></a></li>
+
                                         </li>
                                     </ul>
                                 </div>

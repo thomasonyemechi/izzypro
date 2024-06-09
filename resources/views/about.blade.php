@@ -13,7 +13,7 @@
                     <div class="case-study-featured">
                         <div class="section-heading heading-left">
                             <span class="subtitle">Who we are</span>
-                            <h2 class="title">Building software for world changers</h2>
+                            <h2 class="title">Creating Graphics for world changers</h2>
                             <p>
                                 Welcome to Izzypro concept, where design transforms businesses and elevates brands. As a
                                 leading graphics design company, we specialize in crafting visually stunning and
@@ -82,39 +82,42 @@
     <section class="section section-padding bg-color-dark pb--80 pb_lg--40 pb_md--20">
         <div class="container">
             <div class="section-heading heading-light-left mb--100">
-                <span class="subtitle">Our Valus</span>
+                <span class="subtitle">Our Values</span>
                 <h2 class="title">Why should you work with us?</h2>
-                <p class="opacity-50">Nulla facilisi. Nullam in magna id dolor
-                    blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet.</p>
             </div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="about-quality">
                         <h3 class="sl-number">1</h3>
-                        <h5 class="title">Exceed clients’ and colleagues’ expectations</h5>
-                        <p>Ut id orci ultricies, gravida arcu ac, elementum
-                            eros. Curabitur tortor ipsum, imperdiet eget odio
-                            ac, faucibus ultricies nisl. Maecenas
-                            scelerisque dignissim elit.</p>
+                        <h5 class="title">Expertise</h5>
+                        <p>By handling your design work to us, you tap into our team's expertise in creating visually
+                            stunning and effective designs that capture your brand's essence. Our experienced designers stay
+                            up-to-date with the latest design trends and technologies, ensuring your brand stands out in the
+                            competitive market</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="about-quality">
                         <h3 class="sl-number">2</h3>
-                        <h5 class="title">Take ownership and question the status quo in a constructive manner</h5>
-                        <p>Nulla facilisi. Vestibulum vel urna eget magna condimentum faucibus. Sed arcu mi, semper sed
-                            suscipit vel, rhoncus vel justo.</p>
+                        <h5 class="title">Time-Efficiency</h5>
+                        <p>Handing over your design work to us saves you time and resources, allowing you to focus on your
+                            core business activities. Our agency works efficiently to deliver high-quality designs promptly,
+                            ensuring your projects stay on track and meet deadlines.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="about-quality">
                         <h3 class="sl-number">3</h3>
-                        <h5 class="title">Be brave, curious and experiment – learn from all successes and failures</h5>
-                        <p>Quisque aliquet quis est in faucibus. Aenean eget lorem ac risus placerat convallis eget a eros.
-                            Suspendisse dignissim ultrices tellus, id placerat mauris lacinia a.</p>
+                        <h5 class="title">Objective Perspective<h5>
+                                <p>
+                                    By entrusting us with your design needs, you gain an objective perspective on your
+                                    brand's visual identity. We bring fresh eyes and ideas to the table, helping you
+                                    discover new opportunities to enhance your brand's image and messaging.
+                                </p>
                     </div>
                 </div>
-  
+
             </div>
         </div>
         <ul class="list-unstyled shape-group-10">
@@ -144,7 +147,9 @@
                             <span class="subtitle">Our Team</span>
                             <h2>Alone we can do so little; together we can do so much.</h2>
                             <p>
-                                Our diverse team of passionate individuals brings a wealth of experience and expertise to the table, ensuring that we deliver innovative solutions that exceed our clients' expectations
+                                Our diverse team of passionate individuals brings a wealth of experience and expertise to
+                                the table, ensuring that we deliver innovative solutions that exceed our clients'
+                                expectations
                             </p>
                         </div>
                     </div>

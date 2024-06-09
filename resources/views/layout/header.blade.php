@@ -6,9 +6,9 @@
                 <div class="header-logo">
                     <a href="/"><img class="light-version-logo" src="assets/media/logo.png"
                             style="width: 50px !important ; height: 50px !important" alt="logo"></a>
-                    <a href="/"><img class="dark-version-logo" src="assets/media/logo3.png"
+                    <a href="/"><img class="dark-version-logo" src="assets/media/logo3.png" style="width: 120px; !important"
                             alt="logo"></a>
-                    <a href="/"><img class="sticky-logo" src="assets/media/logo2.png" alt="logo"></a>
+                    <a href="/"><img class="sticky-logo" src="assets/media/logo2.png" style="width: 120px; !important" alt="logo"></a>
                 </div>
                 <div class="header-main-nav">
                     <!-- Start Mainmanu Nav -->
@@ -17,8 +17,8 @@
                             <div class="mobile-nav-header">
                                 <div class="mobile-nav-logo">
                                     <a href="/">
-                                        <img class="light-mode" src="assets/media/logo2.png" alt="Site Logo">
-                                        <img class="dark-mode" src="assets/media/logo3.png" alt="Site Logo">
+                                        <img class="light-mode" src="assets/media/logo2.png" style="width: 120px; !important" alt="Site Logo">
+                                        <img class="dark-mode" src="assets/media/logo3.png" style="width: 120px; !important" alt="Site Logo">
                                     </a>
                                 </div>
                                 <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i
@@ -32,10 +32,10 @@
                             <li><a href="/about">About Us</a></li>
 
                             <li><a href="/service">Services</a></li>
-                            <li><a href="/portfolio">portfolio</a></li>
-                            <li><a href="/post-project">post project</a></li>
+                            <li><a href="/portfolio">Portfolio</a></li>
+                            <li><a href="/post-project">Post project</a></li>
                             <li><a href="/contact">Contact</a></li>
-                            <li><a href="/access-account">Access - Account</a></li>
+                            <li><a href="/access-account">Login</a></li>
                         </ul>
                     </nav>
                     <!-- End Mainmanu Nav -->

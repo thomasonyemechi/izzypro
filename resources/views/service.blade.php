@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#section5">Technology</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section6">Video Editing</a>
+                        <a class="nav-link" href="#section6">Motion Graphics</a>
                     </li>
                 </ul>
             </div>
@@ -120,7 +120,7 @@
         </div>
 
 
-
+{{-- 
         <div class="section section-padding" id="section5">
             <div class="container">
                 <div class="section-heading heading-left">
@@ -154,13 +154,16 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+
+
+
         <!-- Content strategy Service -->
         <div class="section section-padding bg-color-light" id="section6">
             <div class="container">
                 <div class="section-heading heading-left">
                     <span class="subtitle">Service</span>
-                    <h2 class="title">Video Editing</h2>
+                    <h2 class="title">Motion Graphics</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
@@ -169,36 +172,13 @@
                                 <img src="assets/media/icon/icon-45.png" alt="icon">
                             </div>
                             <div class="content">
-                                <h5 class="title"> <a href="#">Web Audit Practices</a></h5>
-                                <p>industry-icon-1 Web Audit Practices A reputable marketing strategy company runs a complete digital,</p>
+                                <h5 class="title"> <a href="#">Motion Graphics</a></h5>
+                                <p>From simple Content Management System to complex eCommerce</p>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                        <div class="services-grid service-style-2">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-46.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="#">Marketing Flexibility</a></h5>
-                                <p>Do you cater to other businesses, investors, decision-makers or consumers? A trustworthy digital</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 sal-animate" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                        <div class="services-grid service-style-2">
-                            <div class="thumbnail">
-                                <img src="assets/media/icon/icon-47.png" alt="icon">
-                            </div>
-                            <div class="content">
-                                <h5 class="title"> <a href="#">Advertising Strategy</a></h5>
-                                <p>Promoting your products and services online requires cutting-edge organic and paid search strategies to rise</p>
-                                
-                            </div>
-                        </div>
-                    </div>
+               
                 </div>
             </div>
         </div>

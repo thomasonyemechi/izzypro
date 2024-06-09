@@ -4,8 +4,11 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\UserController;
+use App\Models\Portfolio;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +33,12 @@ Route::get('/about', function () {
 
 
 
+Route::get('/terms', function () {
+    return view('terms');
+});
+
+
+
 Route::get('/service', function () {
     return view('service');
 });
@@ -37,9 +46,15 @@ Route::get('/service', function () {
 
 
 
-Route::get('/portfolio', function () {
-    return view('portfolio');
+Route::get('/portfolio', function (Request $request) {
+    $portfolios = Portfolio::get(); $project = '';
+    if($request->portfolio) {
+        $project = Portfolio::findorfail($request->portfolio);
+    }
+    $portfolios = Portfolio::get();
+    return view('portfolio', compact(['portfolios', 'project']));
 });
+
 
 
 
@@ -73,6 +88,8 @@ Route::group((['prefix' => 'admin/', 'as' => 'admin.',]), function() {
     Route::get('/manage_client', [AdminController::class, 'clientIndex']);
     Route::get('/client_orders', [AdminController::class, 'clientOrdersIndex']);
     Route::get('/project/{id}', [AdminController::class, 'projectIndex']);
+    Route::get('/portfolio', [AdminController::class, 'portfolioIndex']);
+    Route::post('/portfolio', [AdminController::class, 'createPortfolio']);
 
     // Route::get('/overview', [AdminController::class, 'dashboardIndex']);
 });
